@@ -56,26 +56,6 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterContent>
-        <CardGrid>
-          <Card>
-            <h3>다온렌탈</h3>
-            <p>고소작업대 전문 렌탈 서비스</p>
-            <p>서울 · 경기 · 인천 지역</p>
-            <p>지게차 불필요, 상하차 무료</p>
-          </Card>
-          <Card>
-            <h3>연락처</h3>
-            <p>대표: 김효정</p>
-            <p>전화: 010-7725-0048</p>
-            <p>이메일: hyo1511@naver.com</p>
-          </Card>
-          <Card>
-            <h3>주소</h3>
-            <p>경기도 파주시</p>
-            <p>소라지로97번길 45</p>
-            <p>사업자등록번호: 491-01-01954</p>
-          </Card>
-        </CardGrid>
         <BottomBar>
           <p>© 2024 다온렌탈. All rights reserved.</p>
         </BottomBar>

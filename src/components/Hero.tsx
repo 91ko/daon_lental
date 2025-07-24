@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import * as FaIcons from 'react-icons/fa6';
 
 const HeroSection = styled.section`
   padding: 6rem 0;
@@ -82,13 +83,47 @@ const HeroSection = styled.section`
   }
 `;
 
+const PhoneNumber = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  background: #e6f0ff;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0 0.5rem 0;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  white-space: nowrap;
+  gap: 0.7rem;
+  min-width: 0;
+  max-width: 100vw;
+  overflow-x: auto;
+
+  &:hover {
+    background: #007bff;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+  }
+`;
+
 const Hero: React.FC = () => {
   return (
     <HeroSection>
       <div className="container">
         <div className="hero-content">
           <h2>서울 경기 인천 다온렌탈!!</h2>
-          <p className="highlight">지게차불필요 상하차무료</p>
+          <PhoneNumber href="tel:010-7725-0048">
+            <span style={{ display: 'flex', alignItems: 'center' }}>{FaIcons.FaPhone({style: {width: '1.3em', height: '1.3em'}})}</span>
+            010-7725-0048
+          </PhoneNumber>
         </div>
         <div className="hero-image">
           <img src="/main.jpeg" alt="고소작업대 이미지" />

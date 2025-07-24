@@ -25,6 +25,7 @@ const HeaderContainer = styled.header`
     margin: 0;
     font-size: 1.5rem;
     color: #333;
+    word-break: keep-all;
   }
 
   .main-nav ul {
@@ -46,6 +47,12 @@ const HeaderContainer = styled.header`
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: all 0.3s ease;
+    min-width: 0;
+    word-break: keep-all;
+    white-space: nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: center;
     
     &:hover {
       color: #007bff;
@@ -75,20 +82,36 @@ const HeaderContainer = styled.header`
 
   @media (max-width: 768px) {
     .container {
-      padding: 1rem;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 1rem 0.5rem;
+      gap: 0.5rem;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
     }
 
     .logo h1 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      text-align: center;
+      word-break: keep-all;
     }
 
     .main-nav ul {
-      gap: 1rem;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      align-items: stretch;
     }
 
     .nav-link {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.9rem;
+      padding: 0.6rem 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+      justify-content: center;
     }
   }
 `;

@@ -38,12 +38,7 @@ const ContactInfo: React.FC = () => {
     <ContactSection>
       <div className="container">
         <div className="info-card">
-          <h3>다온렌탈</h3>
-          <p>김효정</p>
-          <p>경기도 파주시 소라지로97번길 45</p>
-          <p>사업자등록번호 : 491-01-01954</p>
-          <p>전화번호 : 010-7725-0048</p>
-          <p>이메일 : hyo1511@naver.com</p>
+          {/* 정보 삭제됨 */}
         </div>
       </div>
     </ContactSection>
