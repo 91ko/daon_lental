@@ -52,12 +52,24 @@ const BottomBar = styled.div`
   font-size: 0.9rem;
 `;
 
+const CompanyInfo = styled.div`
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.4;
+`;
+
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <FooterContent>
         <BottomBar>
           <p>© 2024 다온렌탈. All rights reserved.</p>
+          <CompanyInfo>
+            대표: 김효정 | 사업자등록번호: 491-01-01954<br/>
+            경기도 파주시 소라지로97번길 45 | 이메일: hyo1511@naver.com
+          </CompanyInfo>
         </BottomBar>
       </FooterContent>
     </FooterContainer>
